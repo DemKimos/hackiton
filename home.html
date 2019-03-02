@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<title>Home</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.min.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.min.js"></script>
+
+	<style type="text/css">
+	  body {
+	    background-color: #F4C984;
+	  }
+	  .ui.menu .item img.logo {
+	    margin-right: 1.5em;
+	  }
+	  .main.container {
+	    margin-top: 3em;
+	  }
+	  .wireframe {
+	    margin-top: 2em;
+	  }
+	  .ui.grid{
+	  	overflow-y: auto;
+	  	overflow-x: auto;
+	  	white-space: nowrap;
+	  }
+	</style>
+
+	</head>
+	<body>
+		<div class = "ui borderless fixed large menu" style = "background:#2B5162">
+		    <div class="ui container">
+		    	<div class="ui image">
+		    		<img src="logo.png" style="height:60px">
+		    	</div>
+		    	<div class="ui right simple dropdown item">
+		    		<div class="header item" style="color: #EFEFEF">Home</div>
+		    		<div class = "image">   
+  					   <img src = "menu.png" style = "width:25px;height:25px">
+  					</div>
+  					 <div class="menu">
+				        <a class="active item" href="#">Home</a>
+				        <a class="item" href="my_acct.html">My Account</a>
+				        <div class="divider"></div>
+				        <a class="item" href="login.html">Sign Out</a>
+				    </div>
+		    	</div>
+			</div>
+		</div>
+			
+		<br><br><br><br><br>
+		
+		<div class="ui container">
+			<div class="ui scrolling grid">
+				<div class="four wide column">
+					<div class="ui card fluid">
+						<div class="image fluid">
+							<img src="tatsulok.jpg">
+						</div>
+						<div class="content">
+							<div class="header">
+									UP Fair: Tatsulok
+							</div>
+							<div class="description">
+								<p>Fevrier 12, 2019</p>
+								<p>Tuesday</p>
+							</div>
+						</div>
+						<button class="ui green button" id = "tatsulok">
+									80.00 PHP
+						</button>
+					</div>
+				</div>
+				<div class="four wide column">
+					<div class="ui card fluid">
+						<div class="image fluid">
+							<img src="elements.jpg">
+						</div>
+						<div class="content">
+							<div class="header">
+									UP Fair: Elements
+							</div>
+							<div class="description">
+								<p>Fevrier 13, 2019</p>
+								<p>Wednesday</p>
+							</div>
+						</div>
+						<button class="ui green button" id = "elements">
+									80.00 PHP
+						</button>
+					</div>
+				</div>
+				<div class="four wide column" id = "rootscol">
+					<div class="ui card fluid" id = "rootscard">
+						<div class="blurring image fluid" id = "rootsimg">
+							<img src="roots.jpg">
+						</div>
+						<div class="content">
+							<div class="header">
+									UP Fair: Roots
+							</div>
+							<div class="description">
+								<p>Fevrier 14, 2019</p>
+								<p>Thursday</p>
+							</div>
+						</div>
+						<button class="ui green button" id = "roots">
+									80.00 PHP
+						</button>
+						<div class="ui dimmer">
+							<div class="top aligned content">
+						      <h2 class="ui inverted header">Title</h2>
+						      <div class="ui primary button">Add</div>
+						      <div class="ui button">View</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="four wide column">
+					<div class="ui card fluid">
+						<div class="image fluid">
+							<img src="cosmos.jpg">
+						</div>
+						<div class="content">
+							<div class="header">
+									UP Fair: Cosmos
+							</div>
+							<div class="description">
+								<p>Fevrier 15, 2019</p>
+								<p>Friday</p>
+							</div>
+						</div>
+						<button class="ui green button" id = "cosmos">
+									80.00 PHP
+						</button>
+					</div>
+				</div>
+				<div class="four wide column">
+					<div class="ui card fluid">
+						<div class="image fluid">
+							<img src="rev.jpg">
+						</div>
+						<div class="content">
+							<div class="header">
+									UP Fair: Rev
+							</div>
+							<div class="description">
+								<p>Fevrier 16, 2019</p>
+								<p>Saturday</p>
+							</div>
+						</div>
+						<button class="ui green button" id = "rev">
+									80.00 PHP
+						</button>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class = "ui modal" id="rootsmodal">
+			<i class="close icon"></i>
+			<div class="header">
+				<h2>UP Fair Thursday: Roots</h2>
+			</div>
+			<div class="content">
+				<!--
+				<div class="ui top aligned left floated image">
+					<img src="rootsfull.jpg" style="height:400px">
+					<span>
+						BOO	
+					</span>
+					<h2>ROOTS</h2>
+					<p> A UP Fair event</p>
+				</div>
+				-->
+				<h3>Organizer:</h3>
+				<p>UP Economics Society</p>
+				<h3>Date:</h3>
+				<p>Fevrier 14, 2019, Jeudi</p>
+				<h3>Description:</h3>
+				<p>A UP Fair event starring Franco, Rivermaya, and Imago!</p>
+			</div>
+			<div class="actions">
+				<button class="ui green approve button" id = "rootsbuy">
+					80.00 PHP
+				</button>
+				<button class="ui red cancel button">
+					Cancel
+				</button>
+			</div>
+		</div>
+
+		<!-- 
+		show modal on click
+		alert after buy
+		dimmer hover
+		-->
+		<script>
+			$(document).ready(function(){
+		    	$('#roots').click(function(){
+		        	$('#rootsmodal').modal('show');    
+		    	});
+		    });
+
+			$('#rootsmodal').modal({onApprove: function() {
+				alert("You have bought a ticket.");
+				$('#rootscol').remove();
+		    	}
+			});
+
+			$('#rootsimg').hover(function(){
+				$('#rootsimg').dimmer('toggle');
+			});
+		</script>
+
+	</body>
+</html>

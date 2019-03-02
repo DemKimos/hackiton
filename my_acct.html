@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<title>Home</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.min.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.min.js"></script>
+
+	<style type="text/css">
+	  body {
+	    background-color: #F4C984;
+	  }
+	  .ui.menu .item img.logo {
+	    margin-right: 1.5em;
+	  }
+	  .main.container {
+	    margin-top: 3em;
+	  }
+	  .wireframe {
+	    margin-top: 2em;
+	  }
+	  .ui.grid{
+	  	overflow-y: auto;
+	  	overflow-x: auto;
+	  	white-space: nowrap;
+	  }
+	</style>
+
+	</head>
+	<body>
+		<div class = "ui borderless fixed large menu" style = "background:#2B5162">
+		    <div class="ui container">
+		    	<div class="ui image">
+		    		<img src="logo.png" style="height:60px">
+		    	</div>
+		    	<div class="ui right simple dropdown item">
+		    		<div class="header item" style="color: #EFEFEF">My Account</div>
+		    		<div class = "image">   
+  					   <img src = "menu.png" style = "width:25px;height:25px">
+  					</div>
+  					 <div class="menu">
+				        <a class="item" href="home.html">Home</a>
+				        <a class="active item" href="#">My Account</a>
+				        <div class="divider"></div>
+				        <a class="item" href="login.html">Sign Out</a>
+				    </div>
+		    	</div>
+			</div>
+		</div>
+			
+		<br><br><br><br><br>
+		
+		<div class="ui container">
+			<div class="header">
+				<h2>Valid Tickets</h2>
+			</div>
+			<div class="ui divider"></div>
+			<div class="ui scrolling grid">
+				<div class="three wide column">
+					<div class="ui card fluid">
+						<div class="image">
+							<img src="roots.jpg">
+						</div>
+						<div class="content">
+							<div class="header">
+								<a href="/lol" style="color:#000000">
+									UP Fair: Roots
+								</a>
+							</div>
+							<div class="description">
+								<p>Fevrier 14, 2019</p>
+								<p>Thursday</p>
+							</div>
+						</div>
+						<button class="ui green button">
+									80.00 PHP
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="ui divider"></div>
+			<div class="header">
+				<h2>Past Tickets</h2>
+			</div>
+			<div class="ui divider"></div>
+			<div class = "ui grid">
+				<div class="three wide column">
+					<div class="ui card fluid">
+						<div class="image">
+							<img src="rev.jpg">
+						</div>
+						<div class="content">
+							<div class="header">
+								<a href="/lol" style="color:#000000">
+									UP Fair: Rev
+								</a>
+							</div>
+							<div class="description">
+								<p>Fevrier 16, 2019</p>
+								<p>Saturday</p>
+							</div>
+						</div>
+						<button class="ui green button">
+									80.00 PHP
+						</button>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</body>
+</html>
