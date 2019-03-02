@@ -104,6 +104,7 @@
 				</div>
 			</div>
 
+
 			<div class="ui segments">
 				<div class = "ui segment" style="background-color:#8f3985">
 					<div class="header">
@@ -117,14 +118,15 @@
 							<div class="ui card fluid" style="background-color:#777777">
 								<div class="image">
 									<img src="rev.jpg">
+									<div class="ui dimmer">	</div>
 								</div>
 								<div class="content">
 									<div class="header">
-										<a href="/lol" style="color:#000000">
+										<a href="/lol" style="color:#EFEFEF">
 											UP Fair: Rev
 										</a>
 									</div>
-									<div class="description">
+									<div class="description" style="color:#EFEFEF"> 
 										<p>Fevrier 16, 2019</p>
 										<p>Saturday</p>
 									</div>
@@ -135,5 +137,11 @@
 				</div>
 			</div>			
 		</div>
+
+		<script>
+			$(document).ready(function(){
+		    	$('.ui.dimmer').dimmer('show');    
+		    });
+		</script>
 	</body>
 </html>

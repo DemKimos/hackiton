@@ -59,8 +59,17 @@
 			<div class="ui scrolling grid">
 				<div class="four wide column">
 					<div class="ui card fluid">
-						<div class="image fluid">
+						<div class="blurring image fluid" id="tatsulokimg">
 							<img src="tatsulok.jpg">
+							<div class="ui dimmer">
+								<div class="top aligned content">
+							   		<h2>UP Fair: Tatsulok</h2>
+									<h3>Organizer:</h3>
+									<p>The Grand Triumvirate</p>
+									<h3>Artists:</h3>
+									<p>6cyclemind, Callalily, Juan Karlos</p>
+							    </div>
+							</div>
 						</div>
 						<div class="content">
 							<div class="header">
@@ -78,8 +87,17 @@
 				</div>
 				<div class="four wide column">
 					<div class="ui card fluid">
-						<div class="image fluid">
+						<div class="blurring image fluid" id="elementsimg">
 							<img src="elements.jpg">
+							<div class="ui dimmer">
+								<div class="top aligned content">
+							   		<h2>UP Fair: Elements</h2>
+									<h3>Organizer:</h3>
+									<p>UP JPIA</p>
+									<h3>Artists:</h3>
+									<p>Parokya ni Edgar, Itchyworms, Gloc-9</p>
+							    </div>
+							</div>
 						</div>
 						<div class="content">
 							<div class="header">
@@ -99,6 +117,15 @@
 					<div class="ui card fluid" id = "rootscard">
 						<div class="blurring image fluid" id = "rootsimg">
 							<img src="roots.jpg">
+							<div class="ui dimmer">
+								<div class="top aligned content">
+							   		<h2>UP Fair: Roots</h2>
+									<h3>Organizer:</h3>
+									<p>UP Economics Society</p>
+									<h3>Artists:</h3>
+									<p>Franco, Rivermaya, Imago, This Band</p>
+							    </div>
+							</div>
 						</div>
 						<div class="content">
 							<div class="header">
@@ -112,20 +139,23 @@
 						<button class="ui green button" id = "roots">
 									80.00 PHP
 						</button>
-						<div class="ui dimmer">
-							<div class="top aligned content">
-						      <h2 class="ui inverted header">Title</h2>
-						      <div class="ui primary button">Add</div>
-						      <div class="ui button">View</div>
-						    </div>
-						</div>
+						
 					</div>
 				</div>
 			
 				<div class="four wide column">
 					<div class="ui card fluid">
-						<div class="image fluid">
+						<div class="blurring image fluid" id="cosmosimg">
 							<img src="cosmos.jpg">
+							<div class="ui dimmer">
+								<div class="top aligned content">
+								 	<h2>UP Fair: Cosmos</h2>
+									<h3>Organizer:</h3>
+									<p>UP Junior Marketing Association</p>
+									<h3>Artists:</h3>
+									<p>Silent Sanctuary, Ben&Ben, Aia De Leon</p>
+								</div>
+							</div>
 						</div>
 						<div class="content">
 							<div class="header">
@@ -143,8 +173,17 @@
 				</div>
 				<div class="four wide column">
 					<div class="ui card fluid">
-						<div class="image fluid">
+						<div class="blurring image fluid" id="revimg">
 							<img src="rev.jpg">
+							<div class="ui dimmer">
+								<div class="top aligned content">
+								 	<h2>UP Fair: Rev</h2>
+									<h3>Organizer:</h3>
+									<p>UP Sigma Kappa Pi, UP Sigma Delta Pi</p>
+									<h3>Artists:</h3>
+									<p>Dong Abay, Carmensita, The Roomhoppers</p>
+								</div>
+							</div>
 						</div>
 						<div class="content">
 							<div class="header">
@@ -213,8 +252,24 @@
 		    	}
 			});
 
+			$('#tatsulokimg').hover(function(){
+				$('#tatsulokimg').dimmer('toggle');
+			});
+
+			$('#elementsimg').hover(function(){
+				$('#elementsimg').dimmer('toggle');
+			});
+
 			$('#rootsimg').hover(function(){
 				$('#rootsimg').dimmer('toggle');
+			});
+
+			$('#cosmosimg').hover(function(){
+				$('#cosmosimg').dimmer('toggle');
+			});
+
+			$('#revimg').hover(function(){
+				$('#revimg').dimmer('toggle');
 			});
 		</script>
 
